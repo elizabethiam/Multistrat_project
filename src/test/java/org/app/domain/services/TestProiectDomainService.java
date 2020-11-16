@@ -44,9 +44,9 @@ public class TestProiectDomainService {
 		logger.info("Service implementation object:: " + service);
 		logger.info("Service implementation class:: " + service.getClass().getName());
 		
-		Integer taskCount = service.getProiectTaskuriCount(1);
-		assertTrue("Tasks not counting...", taskCount > 0);
-		logger.info("Task count autowired xml:: " + taskCount);
+//		Integer taskCount = service.getProiectTaskuriCount(1);
+//		assertTrue("Tasks not counting...", taskCount > 0);
+//		logger.info("Task count autowired xml:: " + taskCount);
 	}
 	
 	@Autowired @Qualifier("ProiectEntityFactoryImpl")
