@@ -15,7 +15,7 @@ public class AppBeanConfig {
 	public IProiectEntityRepository getProiectEntityRepositoryImpl() {
 		return new ProiectEntityRepositoryImpl();
 	}
-	
+	@Bean
 	public IProiectDomainService getIProiectDomainService() {
 		return new ProiectDomainServiceImpl(getProiectEntityRepositoryImpl);
 	}
